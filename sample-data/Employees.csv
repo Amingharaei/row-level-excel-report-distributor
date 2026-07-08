@@ -1,0 +1,15 @@
+EmployeeID,FullName,Department,Role,Email
+1,Ken Sanchez,Executive,Chief Executive Officer,ken.sanchez@example.com
+2,Brian Welcker,Sales,Regional Sales Manager,brian.welcker@example.com
+3,Michael Blythe,Sales,Sales Representative,michael.blythe@example.com
+4,Jillian Carson,Sales,Sales Representative,jillian.carson@example.com
+5,Linda Mitchell,Sales,Sales Representative,linda.mitchell@example.com
+6,Pamela Ansman-Wolfe,Marketing,Marketing Specialist,pamela.ansman-wolfe@example.com
+7,Amy Alberts,Marketing,Marketing Manager,amy.alberts@example.com
+8,Jae Pak,Human Resources,HR Generalist,jae.pak@example.com
+9,Gigi Matthew,Human Resources,HR Manager,gigi.matthew@example.com
+10,Ovidiu Cracium,Finance,Accountant,ovidiu.cracium@example.com
+11,Janice Galvin,Finance,Finance Manager,janice.galvin@example.com
+12,Diane Margheim,IT,Systems Analyst,diane.margheim@example.com
+13,Sariya Harnpadoungsataya,IT,IT Manager,sariya.harn@example.com
+14,Ranjit Varkey Chudukatil,Operations,Operations Lead,ranjit.varkey@example.com

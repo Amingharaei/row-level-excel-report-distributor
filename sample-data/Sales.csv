@@ -1,0 +1,101 @@
+SaleID,EmployeeID,Product,Category,Quantity,Amount
+1001,5,Road-150 Red,Bikes,1,3579
+1002,4,HL Road Frame - Black,Components,4,1188
+1003,5,Road-150 Red,Bikes,2,7004
+1004,4,Mountain-200 Black,Bikes,1,1847
+1005,3,HL Road Frame - Black,Components,1,351
+1006,3,Classic Vest - Blue,Clothing,7,434
+1007,4,Bike Wash - Dissolver,Accessories,5,65
+1008,3,Touring-1000 Blue,Bikes,7,15918
+1009,4,Touring-1000 Blue,Bikes,4,9960
+1010,4,Road-150 Red,Bikes,2,6788
+1011,3,Sport-100 Helmet - Red,Accessories,6,228
+1012,3,Classic Vest - Blue,Clothing,8,576
+1013,3,Water Bottle - 30 oz.,Accessories,2,20
+1014,4,Long-Sleeve Logo Jersey,Clothing,6,378
+1015,3,Classic Vest - Blue,Clothing,2,112
+1016,5,HL Road Frame - Black,Components,5,1450
+1017,3,Road-150 Red,Bikes,7,23394
+1018,4,Long-Sleeve Logo Jersey,Clothing,6,300
+1019,4,Sport-100 Helmet - Red,Accessories,4,152
+1020,5,Long-Sleeve Logo Jersey,Clothing,2,128
+1021,5,Touring-1000 Blue,Bikes,4,8732
+1022,4,Water Bottle - 30 oz.,Accessories,5,55
+1023,5,Fender Set - Mountain,Accessories,4,92
+1024,3,HL Road Frame - Black,Components,1,320
+1025,4,ML Mountain Frame - Silver,Components,2,534
+1026,5,Classic Vest - Blue,Clothing,6,366
+1027,5,Mountain Tire Tube,Accessories,7,63
+1028,4,Touring-1000 Blue,Bikes,5,10855
+1029,3,Classic Vest - Blue,Clothing,5,365
+1030,4,Bike Wash - Dissolver,Accessories,7,63
+1031,3,Touring-1000 Blue,Bikes,8,17168
+1032,3,Road-150 Red,Bikes,3,10563
+1033,3,Long-Sleeve Logo Jersey,Clothing,7,448
+1034,3,Water Bottle - 30 oz.,Accessories,7,70
+1035,4,Fender Set - Mountain,Accessories,5,130
+1036,3,Long-Sleeve Logo Jersey,Clothing,2,124
+1037,4,Long-Sleeve Logo Jersey,Clothing,6,288
+1038,4,Water Bottle - 30 oz.,Accessories,3,27
+1039,3,Classic Vest - Blue,Clothing,5,355
+1040,3,Fender Set - Mountain,Accessories,2,44
+1041,5,Fender Set - Mountain,Accessories,4,80
+1042,4,Touring-1000 Blue,Bikes,1,2406
+1043,4,Mountain Tire Tube,Accessories,1,4
+1044,4,ML Mountain Frame - Silver,Components,4,988
+1045,3,Bike Wash - Dissolver,Accessories,2,14
+1046,5,Mountain Tire Tube,Accessories,2,16
+1047,3,Touring-1000 Blue,Bikes,8,19048
+1048,3,ML Mountain Frame - Silver,Components,7,1869
+1049,5,Classic Vest - Blue,Clothing,4,256
+1050,4,Long-Sleeve Logo Jersey,Clothing,6,354
+1051,5,Mountain Tire Tube,Accessories,2,10
+1052,3,Road-150 Red,Bikes,6,19260
+1053,5,Fender Set - Mountain,Accessories,4,84
+1054,3,Road-150 Red,Bikes,1,3317
+1055,3,Mountain-200 Black,Bikes,6,11016
+1056,5,HL Road Frame - Black,Components,5,1825
+1057,4,HL Road Frame - Black,Components,3,1116
+1058,5,Bike Wash - Dissolver,Accessories,8,64
+1059,4,Water Bottle - 30 oz.,Accessories,4,24
+1060,3,Long-Sleeve Logo Jersey,Clothing,7,392
+1061,4,Water Bottle - 30 oz.,Accessories,8,96
+1062,5,Mountain-200 Black,Bikes,2,3662
+1063,4,Classic Vest - Blue,Clothing,6,348
+1064,3,HL Road Frame - Black,Components,4,1392
+1065,4,Touring-1000 Blue,Bikes,7,15351
+1066,4,Mountain Tire Tube,Accessories,4,16
+1067,4,Fender Set - Mountain,Accessories,2,36
+1068,5,Fender Set - Mountain,Accessories,1,19
+1069,3,Touring-1000 Blue,Bikes,7,16436
+1070,4,HL Road Frame - Black,Components,7,2009
+1071,3,Water Bottle - 30 oz.,Accessories,1,9
+1072,4,Mountain Tire Tube,Accessories,5,35
+1073,5,Classic Vest - Blue,Clothing,8,472
+1074,3,ML Mountain Frame - Silver,Components,4,988
+1075,5,Classic Vest - Blue,Clothing,1,65
+1076,3,Mountain-200 Black,Bikes,8,16456
+1077,5,Touring-1000 Blue,Bikes,1,2360
+1078,3,Touring-1000 Blue,Bikes,2,4808
+1079,3,Long-Sleeve Logo Jersey,Clothing,4,228
+1080,3,Bike Wash - Dissolver,Accessories,4,44
+1081,5,Mountain-200 Black,Bikes,2,4028
+1082,5,Bike Wash - Dissolver,Accessories,6,54
+1083,3,Long-Sleeve Logo Jersey,Clothing,6,312
+1084,4,Water Bottle - 30 oz.,Accessories,3,33
+1085,5,ML Mountain Frame - Silver,Components,8,2240
+1086,3,Mountain-200 Black,Bikes,8,16944
+1087,5,Road-150 Red,Bikes,2,6950
+1088,3,Fender Set - Mountain,Accessories,5,100
+1089,4,Road-150 Red,Bikes,4,13556
+1090,4,Touring-1000 Blue,Bikes,8,19024
+1091,5,ML Mountain Frame - Silver,Components,1,325
+1092,5,ML Mountain Frame - Silver,Components,2,514
+1093,4,Road-150 Red,Bikes,2,7160
+1094,5,Touring-1000 Blue,Bikes,5,11220
+1095,5,HL Road Frame - Black,Components,6,1836
+1096,5,Long-Sleeve Logo Jersey,Clothing,5,305
+1097,4,ML Mountain Frame - Silver,Components,1,251
+1098,5,Water Bottle - 30 oz.,Accessories,5,30
+1099,3,Sport-100 Helmet - Red,Accessories,3,114
+1100,3,Classic Vest - Blue,Clothing,8,576
