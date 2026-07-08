@@ -68,7 +68,7 @@ This is the tool's control input, and it never goes to a recipient: it holds eve
 | `RecipientName`  | Names the output file and fills the `{name}` placeholder in the email.                                                                                                                                              |
 | `AccessKey`      | Comma-separated `EmployeeID`s this person may see. **Blank = everything.** `3` = one person. `3,4` = a manager who sees those people.                                                                               |
 | `Email`          | Outlook address. Blank to skip emailing this person.                                                                                                                                                                |
-| `OneDriveFolder` | Folder to copy the file into (OneDrive then syncs it). Blank to skip. See [Setting up OneDrive delivery](#setting-up-onedrive-delivery-what-goes-in-onedrivefolder) at the end of this README for what to put here. |
+| `OneDriveFolder` | Local folder to copy the file into (OneDrive then syncs it). Blank to skip. |
 | `Enabled`        | `TRUE`/`FALSE` (default `TRUE`). `FALSE` keeps the row but skips it.                                                                                                                                                |
 
 A manager's key is the ids of the people they oversee. To let a manager also see their **own** employee row, add their own id to the list (`2,3,4` instead of `3,4`). The whole list is one row per recipient: one row, one file, one email. That's why a manager's several ids live together in one comma-separated cell rather than spread across rows.
@@ -126,8 +126,9 @@ Recipients and their resolved scope:
 Then it generates a copy per recipient into `output_dir` and delivers nothing.
 
 Each file is named `<Recipient> - <date>.xlsx` (for example, `Michael Blythe - 2026-07-05.xlsx`). The date is today's date, the same one for every recipient in the run, so re-running the tool the next day writes a new set of files instead of overwriting yesterday's.
+Here are three of the five generated reports, so you know what to expect. 
 
-Here are three of the five generated reports, so you know what to expect. The first is for the CEO, Ken Sanchez, who has access to all the data.
+The first is for the CEO, Ken Sanchez, who has access to all the data.
 
 ![CEO report, showing every employee and every sale](images/ceo-report.png)
 
@@ -137,7 +138,7 @@ The second is for Brian Welcker, the regional sales manager, who supervises empl
 
 The third is for Linda Mitchell, a sales representative with employee ID 5.
 
-![Sales representative report, scoped to employee 5 only](images/linda-report.png)
+![Sales representative report, scoped to employee 5 only](images/sales-person-report.png)
 
 ### Step 6: Turn on delivery
 
