@@ -1,0 +1,15 @@
+[project]
+name = "rls-report-distributor"
+version = "1.0.0"
+description = "Generate and distribute row-level-scoped Excel (Power Pivot) reports, one per recipient. Windows-only."
+requires-python = ">=3.14"
+dependencies = [
+    "xlwings>=0.36.6",
+]
+
+[tool.uv]
+# This is an application, not a library:
+package = false
+
+# Prefer a Python you already have (3.14+); download an isolated copy ONLY if none is found.
+python-preference = "system"
