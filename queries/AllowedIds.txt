@@ -1,0 +1,13 @@
+// Query Name: AllowedIds       (Connection only)
+// ----------------------------------------------------------------------------
+// Turns the AccessKey text into a list of whole-number EmployeeIDs.
+// Split on commas, trim, drop empties, convert to numbers.
+
+let
+    key      = AccessKey,
+    parts    = if key = "" then {} else Text.Split(key, ","),
+    trimmed  = List.Transform(parts, each Text.Trim(_)),
+    nonEmpty = List.Select(trimmed, each _ <> ""),
+    ids      = List.Transform(nonEmpty, each Int64.From(_))
+in
+    ids

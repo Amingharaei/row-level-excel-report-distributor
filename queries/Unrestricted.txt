@@ -1,0 +1,10 @@
+// Query Name: Unrestricted     (Connection only)
+// ----------------------------------------------------------------------------
+// true when the access key is blank -> the recipient sees everything (the CEO).
+// This is kept as its own tiny query so the intent reads clearly at the filter site: 
+// `if Unrestricted then <all rows> else <filtered rows>`.
+
+let
+    key = AccessKey
+in
+    key = ""

@@ -1,0 +1,14 @@
+// Query Name: AccessKey        (Connection only)
+// ----------------------------------------------------------------------------
+// Reads the single driver cell that the distributor tool writes before each refresh. 
+// The tool writes a value here, refreshes, and Power Query re-reads it below.
+//
+// Returns a trimmed text value. 
+// A blank cell returns "" -> treated downstream as "no restriction" (the CEO).
+
+let
+    raw  = Excel.CurrentWorkbook(){[Name = "pAccessKey"]}[Content],
+    cell = try raw{0}[Column1] otherwise null,
+    text = if cell = null then "" else Text.Trim(Text.From(cell))
+in
+    text

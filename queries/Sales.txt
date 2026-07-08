@@ -1,0 +1,24 @@
+// Query Name: Sales            (LOAD TO DATA MODEL)
+// ----------------------------------------------------------------------------
+// The same access-key rule filters this table, so the numbers in the pivots are already
+// scoped to the recipient before the model is built.
+
+let
+    Source   = Csv.Document(
+                   File.Contents(SourceFolder & "\Sales.csv"),
+                   [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+               ),
+    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+    Typed    = Table.TransformColumnTypes(Promoted, {
+                   {"SaleID",     Int64.Type},
+                   {"EmployeeID", Int64.Type},
+                   {"Product",    type text},
+                   {"Category",   type text},
+                   {"Quantity",   Int64.Type},
+                   {"Amount",     type number}
+               }),
+    Filtered = if Unrestricted
+               then Typed
+               else Table.SelectRows(Typed, each List.Contains(AllowedIds, [EmployeeID]))
+in
+    Filtered

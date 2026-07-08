@@ -1,0 +1,27 @@
+// Query Name: Employees        (LOAD TO DATA MODEL)
+// ----------------------------------------------------------------------------
+// The security rule is applied HERE, in Power Query, BEFORE the data reaches the model.
+
+// note: with a CSV there is no query folding, and Table.SelectRows
+// filters after the whole file is read, fine for a demo. Against a database,
+// make sure the query folding is active to push the id filter into the source query
+// server does the filtering and we never pull rows the recipient can't see.
+
+let
+    Source   = Csv.Document(
+                   File.Contents(SourceFolder & "\Employees.csv"),
+                   [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+               ),
+    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+    Typed    = Table.TransformColumnTypes(Promoted, {
+                   {"EmployeeID", Int64.Type},
+                   {"FullName",   type text},
+                   {"Department", type text},
+                   {"Role",       type text},
+                   {"Email",      type text}
+               }),
+    Filtered = if Unrestricted
+               then Typed
+               else Table.SelectRows(Typed, each List.Contains(AllowedIds, [EmployeeID]))
+in
+    Filtered
