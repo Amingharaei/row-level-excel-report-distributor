@@ -1,0 +1,56 @@
+# Configuration for the Row-Level Report Distributor.
+#
+# This file has also been shared and not an example file because there are no passwords or secrets in this file: 
+# Outlook delivery uses the desktop Outlook we are already signed in to, and OneDrive delivery is a plain file copy.
+
+[paths]
+# The master workbook: 
+# The one file that holds the Power Query queries, the data model, the driver cell, and the pivots.
+# The tool reads it and writes copies, and it never modifies this file.
+master_workbook = 'C:\Tools\rls-report-distributor\master-reports\Sales-RLS-Master.xlsx'
+
+# Where the generated per-recipient copies are written (created if missing).
+output_dir = 'D:\rls-reports\out'
+
+# Where logs go (created if missing).
+log_dir = 'D:\rls-reports\logs'
+
+
+[recipients]
+# The distribution list:
+# Who gets a report, what they may see, and how it reaches them. CSV or .xlsx.
+path = 'C:\Tools\rls-report-distributor\sample-data\sales-recipients.csv'
+
+# If the list is an .xlsx, the sheet that holds it (ignored for .csv).
+sheet = 'Recipients'
+
+
+[model]
+# The named cell the tool writes each recipient's access key into before refreshing.
+access_key_cell = 'pAccessKey'
+
+# Time limit PER RECIPIENT, in seconds (open + refresh + save).
+# If one recipient runs longer than this, its Excel is force-closed and the run moves on.
+timeout_seconds = 600
+
+
+[delivery]
+# Master switch. FALSE (the default) = generate the copies into output_dir and deliver NOTHING.
+# This is the safe way to check a new or changed config:
+# run it, read the preview, open the generated files, confirm the scoping is right, THEN turn this on.
+enabled = false
+
+[delivery.email]
+enabled = true
+
+# 'send' (the default) sends the message immediately once delivery is enabled above.
+# 'draft' instead builds each Outlook message with the report attached and leaves it UNSENT in your Drafts folder
+mode = 'send'
+
+# {name} and {date} are substituted. Requires classic Outlook (not "new Outlook").
+subject = 'Your sales report - {date}'
+body = "Hi {name},\n\nAttached is your sales report as of {date}.\n\nThis is an automated message; please reply if anything looks off."
+
+[delivery.onedrive]
+# When on, each recipient's file is copied to the folder in their OneDriveFolder.
+enabled = false
